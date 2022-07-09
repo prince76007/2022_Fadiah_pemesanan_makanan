@@ -13,6 +13,7 @@ def getLayoutList(path) {
 android {
     compileSdkVersion 32
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.project.aplikasi.pemesanan_makanan"
         minSdkVersion 19
         targetSdkVersion 32
@@ -35,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
