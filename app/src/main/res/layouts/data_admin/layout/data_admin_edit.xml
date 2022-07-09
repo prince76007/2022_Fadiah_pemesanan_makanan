@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/background_input"
+                                                   tools:context=".data_admin.data_admin_edit">
+
+    <LinearLayout
+        android:id="@+id/judul_Scrool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp">
+
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/putih"
+            android:text="EDIT"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/putih"
+            android:text="Silahkan Edit Data Dibawah ini"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_columnWeight="1"
+        android:focusable="true"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ScrollView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+        
+		
+		
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:id="@+id/layout_id_admin"
+                                android:layout_height="wrap_content">
+                
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/id_admin"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Id Admin " />
+                            </com.google.android.material.textfield.TextInputLayout>
+		
+
+		<com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+				android:layout_below="@+id/layout_id_admin"
+                android:id="@+id/layout_nama"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/nama"
+                    android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/icon_email"
+                    android:hint="Nama " />
+			</com.google.android.material.textfield.TextInputLayout>
+		<com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+				android:layout_below="@+id/layout_nama"
+                android:id="@+id/layout_username"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/username"
+                    android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/icon_email"
+                    android:hint="Username " />
+			</com.google.android.material.textfield.TextInputLayout>
+		<com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+				android:layout_below="@+id/layout_username"
+                android:id="@+id/layout_password"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/password"
+                    android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/icon_email"
+                    android:hint="Password " />
+			</com.google.android.material.textfield.TextInputLayout>
+
+    
+                            <Button
+                                android:id="@+id/tombol_update"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/color_detail"
+                                android:drawableLeft="@drawable/simpan_putih"
+                                android:text="      UPDATE     "
+                                android:textColor="#ffff">
+                            </Button>
+					
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

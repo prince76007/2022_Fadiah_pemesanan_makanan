@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/background_input"
+                                                   tools:context=".data_detail_pemesanan.data_detail_pemesanan_tambah">
+
+    <LinearLayout
+        android:id="@+id/judul_Scrool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp">
+
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/putih"
+            android:text="PEMESANAN"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/putih"
+            android:text="Silahkan Input Jumlah Pemesanan Dibawah ini"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_columnWeight="1"
+        android:focusable="true"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ScrollView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+        
+		
+		
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:id="@+id/layout_id_detail_pemesanan"
+                                android:layout_height="wrap_content">
+                
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/id_detail_pemesanan"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Id Detail Pemesanan " />
+                            </com.google.android.material.textfield.TextInputLayout>
+		
+		
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layout_id_pemesanan"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layout_id_detail_pemesanan">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/id_pemesanan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/icon_email"
+                                    android:hint="Id Pemesanan " />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layout_id_menu_makanan"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layout_id_pemesanan">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/id_menu_makanan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/icon_email"
+                                    android:hint="Id Menu Makanan " />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layout_jumlah"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layout_id_menu_makanan">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/jumlah"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/icon_email"
+                                    android:hint="Jumlah " />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layout_harga"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layout_jumlah">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/harga"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/icon_email"
+                                    android:hint="Harga " />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                            <Button
+                                android:id="@+id/tombol_simpan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/color_detail"
+                                android:drawableLeft="@drawable/simpan_putih"
+                                android:text="      BELI     "
+                                android:textColor="#ffff">
+                            </Button>
+					
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

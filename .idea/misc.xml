@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/princ/Downloads/fadiah/fadiah_pemesanan/app/src/main/res/layouts/data_detail_pemesanan/layout/data_detail_pemesanan_tambah.xml" value="0.17916666666666667" />
+        <entry key="app/src/main/res/drawable/centre_background.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/detail_putih.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/edit_putih.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/gradient_toolbar.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/layouts/activity/layout/login_activity.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layouts/data_kategori/layout/data_kategori_tambah.xml" value="0.34375" />
+        <entry key="app/src/main/res/layouts/data_menu_makanan/layout/data_menu_makanan_edit.xml" value="0.34375" />
+        <entry key="app/src/main/res/layouts/data_menu_makanan/layout/data_menu_makanan_tambah.xml" value="0.34375" />
+        <entry key="app/src/main/res/layouts/data_menu_makanan/layout/data_menu_makanan_tampil.xml" value="0.34375" />
+        <entry key="app/src/main/res/layouts/data_pelanggan/layout/data_pelanggan_activity_v2.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layouts/data_pelanggan/layout/data_pelanggan_pencarian.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layouts/data_pelanggan/layout/data_pelanggan_tampil_v2.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layouts/data_pemesanan/layout/data_pemesanan_tambah.xml" value="0.22" />
+        <entry key="app/src/main/res/layouts/home/layout/home_activity.xml" value="0.1" />
+        <entry key="app/src/main/res/layouts/home/layout/home_fragment.xml" value="0.22" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2641025641025641" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="com.itcodebox.notebooks.projectservice.ProjectUIState">
+    <option name="selectedNotebookId" value="1" />
+    <option name="selectedChapterId" value="4" />
+    <option name="selectedNoteId" value="29" />
+  </component>
+</project>

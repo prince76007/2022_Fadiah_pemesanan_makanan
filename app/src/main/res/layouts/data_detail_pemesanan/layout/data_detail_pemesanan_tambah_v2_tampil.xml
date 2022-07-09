@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+ 
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/tombol_hapus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tombol_edit"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableRight="@drawable/delete_putih"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/id_detail_pemesanan"
+            android:background="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="isi"
+        />
+					
+				<TextView
+					android:id="@+id/id_pemesanan"
+					android:background="#ffff"
+					android:layout_marginLeft="3dp"
+					android:width="100dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="isi"/>
+				<TextView
+					android:id="@+id/id_menu_makanan"
+					android:background="#ffff"
+					android:layout_marginLeft="3dp"
+					android:width="100dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="isi"/>
+				<TextView
+					android:id="@+id/jumlah"
+					android:background="#ffff"
+					android:layout_marginLeft="3dp"
+					android:width="100dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="isi"/>
+				<TextView
+					android:id="@+id/harga"
+					android:background="#ffff"
+					android:layout_marginLeft="3dp"
+					android:width="100dp"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="isi"/>
+
+
+			
+    </TableRow>
+
+
+</RelativeLayout>
+
+

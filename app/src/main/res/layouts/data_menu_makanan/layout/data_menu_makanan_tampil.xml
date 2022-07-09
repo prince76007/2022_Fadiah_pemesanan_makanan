@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+	
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:id="@+id/id_menu_makanan"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_kategori"
+        android:id="@+id/nama"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumlah"
+        android:id="@+id/id_kategori"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/harga"
+        android:id="@+id/jumlah"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto"
+        android:id="@+id/harga"/>
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keterangan"
+        android:id="@+id/foto"/>
+
+
+
+	<Button
+        android:layout_below="@+id/foto_logo_bank"
+        android:layout_width="wrap_content"
+		android:layout_height="45dp"
+		android:backgroundTint="@color/color_edit"
+		android:textColor="#ffff"
+        android:text="Edit"
+		android:drawableLeft="@drawable/edit_putih"
+        android:id="@+id/tombol_edit" />
+
+    <Button
+        android:layout_width="wrap_content"
+		android:layout_height="45dp"
+		android:backgroundTint="@color/color_hapus"
+		android:textColor="#ffff"
+        android:text="Hapus"
+        android:layout_below="@+id/foto_logo_bank"
+        android:layout_toRightOf="@+id/tombol_edit"
+		android:drawableLeft="@drawable/delete_putih"
+        android:id="@+id/tombol_hapus" />
+
+</RelativeLayout>

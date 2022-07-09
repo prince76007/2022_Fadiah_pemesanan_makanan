@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.project.aplikasi.pemesanan_makanan">
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.project.aplikasi.pemesanan_makanan.activity.splashscreen_activity"
+			android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		
+        <activity
+            android:name="com.project.aplikasi.pemesanan_makanan.activity.lokasianda_activity"
+            android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"
+            android:label="@string/title_activity_lokasianda_"/>
+        <activity
+            android:name="com.project.aplikasi.pemesanan_makanan.activity.webview_activity"
+            android:label="Webview"
+            android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity" />
+        <activity
+            android:name="com.project.aplikasi.pemesanan_makanan.activity.loading"
+            android:label="Loading"
+        />
+			
+        <activity 
+            android:name="com.project.aplikasi.pemesanan_makanan.activity.panduan_activity" />
+        <activity 
+            android:name="com.project.aplikasi.pemesanan_makanan.activity.qrcode_activity" />
+        <activity
+            android:name="com.project.aplikasi.pemesanan_makanan.activity.profile_activity"
+            android:label="Profile"
+            android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity" />
+        <activity android:name="com.project.aplikasi.pemesanan_makanan.activity.login_activity" />
+		
+        <activity
+            android:name="com.project.aplikasi.pemesanan_makanan.home.home_activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- ACTIVITY API -->
+
+        
+        <activity
+		android:label="Edit Data Admin "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_edit"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_activity"/>
+
+        <activity
+		android:label="Tambah Data Admin "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_tambah"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_activity"/>
+
+		<activity
+		android:label="Tambah Data Admin "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_tambah_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_activity"/>
+
+        <activity
+		android:label="Data Admin "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_activity"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+        <activity
+		android:label="Data Admin "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_admin.data_admin_activity_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+        <activity
+		android:label="Edit Data Detail Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_edit"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_activity"/>
+
+        <activity
+		android:label="Tambah Data Detail Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_tambah"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_activity"/>
+
+		<activity
+		android:label="Tambah Data Detail Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_tambah_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_activity"/>
+
+        <activity
+		android:label="Data Detail Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_activity"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+        <activity
+		android:label="Data Detail Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan.data_detail_pemesanan_activity_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+        <activity
+		android:label="Edit Data Kategori "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_edit"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_activity"/>
+
+        <activity
+		android:label="Tambah Data Kategori "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_tambah"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_activity"/>
+
+		<activity
+		android:label="Tambah Data Kategori "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_tambah_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_activity"/>
+
+        <activity
+		android:label="Data Kategori "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_activity"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+        <activity
+		android:label="Data Kategori "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_kategori.data_kategori_activity_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+        <activity
+		android:label="Edit Data Menu Makanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_edit"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_activity"/>
+
+        <activity
+		android:label="Tambah Data Menu Makanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_tambah"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_activity"/>
+
+		<activity
+		android:label="Tambah Data Menu Makanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_tambah_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_activity"/>
+
+        <activity
+		android:label="Data Menu Makanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_activity"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+        <activity
+		android:label="Data Menu Makanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan.data_menu_makanan_activity_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+        <activity
+		android:label="Edit Data Pelanggan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_edit"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_activity"/>
+
+        <activity
+		android:label="Tambah Data Pelanggan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_tambah"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_activity"/>
+
+		<activity
+		android:label="Tambah Data Pelanggan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_tambah_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_activity"/>
+
+        <activity
+		android:label="Data Pelanggan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_activity"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+        <activity
+		android:label="Profil "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_activity_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+        <activity
+		android:label="Konfirmasi Barang Diterima"
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_edit"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_activity"/>
+
+        <activity
+		android:label="Tambah Data Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_tambah"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_activity"/>
+
+		<activity
+		android:label="Tambah Data Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_tambah_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_activity"/>
+
+        <activity
+		android:label="Data Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_activity"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+        <activity
+		android:label="Data Pemesanan "
+		android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan.data_pemesanan_activity_v2"
+		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+		
+        <!-- ACTIVITY SQLITE -->
+
+        
+       <activity
+       android:label="Edit Data Admin "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_admin_sqlite.data_admin_sqlite_edit"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_admin_sqlite.data_admin_sqlite_activity"/>
+
+       <activity
+       android:label="Tambah Data Admin "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_admin_sqlite.data_admin_sqlite_tambah"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_admin_sqlite.data_admin_sqlite_activity"/>
+
+       <activity
+       android:label="Data Admin "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_admin_sqlite.data_admin_sqlite_activity"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+       <activity
+       android:label="Edit Data Detail Pemesanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan_sqlite.data_detail_pemesanan_sqlite_edit"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan_sqlite.data_detail_pemesanan_sqlite_activity"/>
+
+       <activity
+       android:label="Tambah Data Detail Pemesanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan_sqlite.data_detail_pemesanan_sqlite_tambah"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan_sqlite.data_detail_pemesanan_sqlite_activity"/>
+
+       <activity
+       android:label="Data Detail Pemesanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_detail_pemesanan_sqlite.data_detail_pemesanan_sqlite_activity"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+       <activity
+       android:label="Edit Data Kategori "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_kategori_sqlite.data_kategori_sqlite_edit"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_kategori_sqlite.data_kategori_sqlite_activity"/>
+
+       <activity
+       android:label="Tambah Data Kategori "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_kategori_sqlite.data_kategori_sqlite_tambah"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_kategori_sqlite.data_kategori_sqlite_activity"/>
+
+       <activity
+       android:label="Data Kategori "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_kategori_sqlite.data_kategori_sqlite_activity"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+       <activity
+       android:label="Edit Data Menu Makanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan_sqlite.data_menu_makanan_sqlite_edit"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_menu_makanan_sqlite.data_menu_makanan_sqlite_activity"/>
+
+       <activity
+       android:label="Tambah Data Menu Makanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan_sqlite.data_menu_makanan_sqlite_tambah"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_menu_makanan_sqlite.data_menu_makanan_sqlite_activity"/>
+
+       <activity
+       android:label="Data Menu Makanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_menu_makanan_sqlite.data_menu_makanan_sqlite_activity"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+       <activity
+       android:label="Edit Data Pelanggan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan_sqlite.data_pelanggan_sqlite_edit"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pelanggan_sqlite.data_pelanggan_sqlite_activity"/>
+
+       <activity
+       android:label="Tambah Data Pelanggan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan_sqlite.data_pelanggan_sqlite_tambah"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pelanggan_sqlite.data_pelanggan_sqlite_activity"/>
+
+       <activity
+       android:label="Data Pelanggan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan_sqlite.data_pelanggan_sqlite_activity"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+       <activity
+       android:label="Edit Data Pemesanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan_sqlite.data_pemesanan_sqlite_edit"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pemesanan_sqlite.data_pemesanan_sqlite_activity"/>
+
+       <activity
+       android:label="Tambah Data Pemesanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan_sqlite.data_pemesanan_sqlite_tambah"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pemesanan_sqlite.data_pemesanan_sqlite_activity"/>
+
+       <activity
+       android:label="Data Pemesanan "
+       android:name="com.project.aplikasi.pemesanan_makanan.data_pemesanan_sqlite.data_pemesanan_sqlite_activity"
+       android:parentActivityName="com.project.aplikasi.pemesanan_makanan.home.home_activity"/>
+
+
+		
+		
+    </application>
+
+</manifest>

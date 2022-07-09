@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Rumah Makan Muslim Hajjah Zuleka</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Rumah Makan Muslim Hajjah Zuleka</string>
+    <string name="nav_header_subtitle">Selamat Datang</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_kiri1">kiri1</string>
+    <string name="menu_kiri2">kiri2</string>
+    <string name="menu_kiri3">kiri3</string>
+    <string name="menu_kiri4">kiri4</string>
+    <string name="menu_kiri5">Logout</string>
+
+    <string name="menu_1">Pesan Menu</string>
+    <string name="menu_2">Pesanan</string>
+    <string name="menu_3">Riwayat Pesanan</string>
+    <string name="menu_4">Profil</string>
+    <string name="menu_5">Panduan</string>
+    <string name="menu_6">Keluar</string>
+	
+	<string name="tombol_bawah_1">Bawah1</string>
+    <string name="tombol_bawah_2">Bawah2</string>
+    <string name="tombol_bawah_3">Bawah3</string>
+
+
+    <string name="hello_blank_fragment">Assalamuallaikum</string>
+    <string name="title_activity_lokasianda_">Location</string>
+    
+    <string-array name="jenis_kelamin">
+        <item>-Pilih Jenis Kelamin-</item>
+        <item>laki-laki</item>
+        <item>perempuan</item>
+</string-array>
+</resources>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/background_input"
+                                                   tools:context=".data_menu_makanan.data_menu_makanan_tambah_v2">
+
+    <LinearLayout
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silahkan Inputkan data Dibawah ini :"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:background="@drawable/border_left_background_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ScrollView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                >
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:visibility="gone"
+                                    android:id="@+id/layout_id_menu_makanan"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/id_menu_makanan"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Id Menu Makanan " />
+                                </com.google.android.material.textfield.TextInputLayout>
+								
+                                                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_nama"
+                                    android:layout_below="@+id/layout_iid_menu_makanan"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/nama"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Nama  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_id_kategori"
+                                    android:layout_below="@+id/layout_inama"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/id_kategori"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Id Kategori  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_jumlah"
+                                    android:layout_below="@+id/layout_iid_kategori"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/jumlah"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Jumlah  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_harga"
+                                    android:layout_below="@+id/layout_ijumlah"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/harga"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Harga  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_foto"
+                                    android:layout_below="@+id/layout_iharga"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/foto"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Foto  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/layout_keterangan"
+                                    android:layout_below="@+id/layout_ifoto"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/keterangan"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Keterangan  " />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+								
+                            </LinearLayout>
+
+                            <!--
+                                                        <LinearLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_weight="1"
+                                                            android:orientation="vertical">
+                                                                                    
+                                                                                                                                        <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nama " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Id Kategori " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jumlah " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Harga " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Foto " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Keterangan " />
+
+                                                            
+                                                        </LinearLayout>
+                            -->
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/simpan_putih"
+            android:backgroundTint="@color/color_detail"
+            android:textColor="#ffff"
+            android:text="  Tambah   " />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Yang Telah Diinputkan :"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/border_left_background_blue"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ScrollView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <HorizontalScrollView
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp">
+
+                                <LinearLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TableLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tablelayoutid"
+                                    >
+
+                                        <TableRow
+                                            android:id="@+id/rowlay"
+                                            android:background="@android:color/holo_blue_light"
+                                            android:padding="5dp">
+                                            <TextView
+                                                android:layout_width="40dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="#"/>
+									
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Id Menu Makanan " />
+									
+                                                                                        <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Nama " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Id Kategori " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jumlah " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Harga " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Foto " />
+                                            <TextView
+                                                android:width="100dp"
+                                                android:textColor="#ffff"
+                                                android:layout_height="wrap_content"
+                                                android:text="Keterangan " />
+
+								
+								
+                                        </TableRow>
+
+                                        <ListView                                
+                                            android:id="@+id/cvdata_menu_makanan"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+                                    </TableLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/tombol_simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/simpan_putih"
+            android:backgroundTint="@color/color_detail"
+            android:textColor="#ffff"
+            android:text="      Selesai     ">
+        </Button>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
