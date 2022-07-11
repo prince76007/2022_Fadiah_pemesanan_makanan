@@ -2,6 +2,7 @@ package com.project.aplikasi.pemesanan_makanan.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
@@ -75,6 +76,7 @@ public class login_activity extends AppCompatActivity {
                         Toast.makeText(login_activity.this, "Login Gagal", Toast.LENGTH_SHORT).show();
                     }
                 } else {
+                    Log.d("login_res", call.toString()+" - "+response.body().toString());
                     Toast.makeText(login_activity.this, "Koneksi Error", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -82,6 +84,7 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onFailure(Call<login_pegawai_api> call, Throwable t) {
 				loading.hideDialog();
+                Log.d("login_res", call.toString()+" - "+t.toString());
                 Toast.makeText(login_activity.this, "Koneksi Error", Toast.LENGTH_SHORT).show();
             }
         });

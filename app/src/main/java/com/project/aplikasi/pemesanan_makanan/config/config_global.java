@@ -17,7 +17,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class config_global {
-    public static final String BASE_URL = "https://0134-114-122-4-165.ap.ngrok.io/2022_Fadiah_pemesanan_makanan/server/";
+    public static final String BASE_URL = " http://192.168.254.218/fadiah_pemesanan_server/server/";
 
     config_sessionmanager config_sessionmanager;
 

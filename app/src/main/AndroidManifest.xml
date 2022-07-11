@@ -175,7 +175,7 @@
 
 
         <activity
-		android:label="Edit Data Pelanggan "
+		android:label="Edit Data Pelayan "
 		android:name="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_edit"
 		android:parentActivityName="com.project.aplikasi.pemesanan_makanan.data_pelanggan.data_pelanggan_activity"/>
 
